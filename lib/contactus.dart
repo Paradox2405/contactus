@@ -8,9 +8,6 @@ import 'package:url_launcher/url_launcher.dart';
 class ContactUs extends StatelessWidget {
   ///Logo of the Company/individual
 
-  ///Ability to add an image
-  final Image image;
-
   ///Phone Number of the company/individual
   final String phoneNumber;
 
@@ -74,8 +71,6 @@ class ContactUs extends StatelessWidget {
     @required this.taglineColor,
     @required this.email,
     this.emailText,
-    this.logo,
-    this.image,
     this.phoneNumber,
     this.phoneNumberText,
     this.website,
