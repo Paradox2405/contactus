@@ -358,7 +358,7 @@ class ContactUsBottomAppBar extends StatelessWidget {
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
       child: Text(
-        'Designed and Developed by $companyName \nPress Here to contact!',
+        'Designed and Developed by $companyName \nContact Us Here!',
         textAlign: TextAlign.center,
         style: TextStyle(color: textColor, fontSize: fontSize),
       ),
