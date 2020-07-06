@@ -7,7 +7,6 @@ import 'package:url_launcher/url_launcher.dart';
 ///Class for adding contact details/profile details as a complete new page in your flutter app.
 class ContactUs extends StatelessWidget {
   ///Logo of the Company/individual
-  final ImageProvider logo;
 
   ///Ability to add an image
   final Image image;
@@ -97,17 +96,6 @@ class ContactUs extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Visibility (
-              visible: logo != null,
-              child: CircleAvatar(
-                radius: 50.0,
-                backgroundImage: logo,
-              ),
-            ),
-            Visibility (
-              visible: image != null,
-              child: image ?? SizedBox.shrink()
-            ),
             Text(
               companyName,
               style: TextStyle(
@@ -375,7 +363,7 @@ class ContactUsBottomAppBar extends StatelessWidget {
       highlightColor: Colors.transparent,
       splashColor: Colors.transparent,
       child: Text(
-        'Designed and Developed by $companyName 💙\nWant to contact?',
+        'Designed and Developed by $companyName \nPress Here to contact!',
         textAlign: TextAlign.center,
         style: TextStyle(color: textColor, fontSize: fontSize),
       ),
